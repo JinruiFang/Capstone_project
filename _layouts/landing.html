@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta charset="UTF-8">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+    type="text/css" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="/assets/css/landing.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/js/landing.js"></script>
+  {% include head-custom.html %}
+</head>
+
+<body>
+  <header class="nav animate__animated animate__fadeIn">
+    <nav class="border-gray-200 px-4 lg:px-32 py-2.5 dark:bg-gray-800">
+      <div class="flex flex-wrap items-center mx-auto max-w-screen-xl">
+        <a href="/" class="flex items-center pt-1 pb-1" title="dService Home Page" rel="home">
+          <img src="{{ site.baseurl }}/assets/icons/favicons/logo-only-white.png" alt="DAfinity" class="logo-small">
+        </a>
+        <p class="px-3" style="color:rgb(233, 233, 233)">DAfinity</p>
+        <!-- <div class="navbar pt-4">
+          {% include navigation-bar.html %}
+        </div> -->
+      </div>
+    </nav>
+  </header>
+  <main class="page-header" role="banner" id="header">
+    <div class="header-content">
+      <h1 class="text-6xl p-8 font-medium page-title" id="homepage-title"><span
+          style="color:rgb(158, 169, 254); font-weight:650">dService: </span>Empowering Your Data Science Journey
+      </h1>
+      <!-- <h2 class="text-2xl p-4 pb-8" id="homepage-title" style="font-weight:350;color:rgba(255, 255, 255, 0.931)">
+        An innovative platform designed to
+        empower international students interested in data science with personalized insights and detailed information
+        about U.S. Data Science Master's programs.
+      </h2> -->
+      <a class="btn p-4 mt-6" href="{{ site.baseurl }}/home">Try dService&nbsp;&nbsp;➚</a>
+      <br>
+    </div>
+  </main>
+  <main id="content" class="main-content pt-8 mb-8" role="main">
+    <h2 class="text-2xl pt-4" style="font-weight:500">Project Overview</h2>
+    <p>
+      dService is a platform that provides international students with detailed information and personalized insights on
+      over 50 US-based data science master's programs. The "by students for students" project aims to simplify the
+      process of selected a graduate program and provide helpful information to international students. By providing
+      accurate and up-to-date information, the platform empowers students to make informed decisions that align with
+      their academic and career goals.
+    </p>
+    <div class="key-features">
+      <h2 class="text-2xl pt-2" style="font-weight:500">Key Features</h2>
+      <p>
+        We are creating a platform or resource center for international students to access information and resources on
+        data science graduate programs & careers.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-6 pt-2" id="grid-functions">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 w-16">
+            <a href="{{ site.baseurl }}/map">
+              <img src="{{ site.baseurl }}/assets/icons/undraw_map_dark_re_36sy.svg" class="w-full" alt="map">
+            </a>
+          </div>
+          <a href="{{ site.baseurl }}/map" class="text-lg font-medium ml-4">Explore Data Science Master's programs
+            across
+            the United States</a>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 w-16">
+            <a href="{{ site.baseurl }}/tuition_dashboard">
+              <img src="{{ site.baseurl }}/assets/icons/undraw_savings_re_eq4w.svg" class="w-full" alt="tuition">
+            </a>
+          </div>
+          <a href="{{ site.baseurl }}/tuition_dashboard" class="text-lg font-medium ml-4">Get an overview of
+            tuition fees for Data Science programs</a>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 w-16">
+            <a href="{{ site.baseurl }}/school_navigator">
+              <img src="{{ site.baseurl }}/assets/icons/undraw_success_factors_re_ce93.svg" class="w-full"
+                alt="navigator">
+            </a>
+          </div>
+          <a href="{{ site.baseurl }}/school_navigator" class="text-lg font-medium ml-4">Find the perfect Data Science
+            program that meets your needs</a>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 w-16">
+            <a href="{{ site.baseurl }}/employment">
+              <img src="{{ site.baseurl }}/assets/icons/undraw_resume_re_hkth.svg" class="w-full" alt="employment">
+            </a>
+          </div>
+          <a href="{{ site.baseurl }}/employment" class="text-lg font-medium ml-4">Learn about potential career paths in
+            Data
+            Science and the required skills</a>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 w-16">
+            <a
+              href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4Ny9bjIfbjo_qqs92rdZWdBLCjDFPqM9kKDZSZR_cHB-SuarE_3MWiRBMgZGPm4NUx6eVRVL9jtKR/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false">
+              <img src="{{ site.baseurl }}/assets/icons/undraw_location_review_d5qn.svg" class="w-full" alt="dataset">
+            </a>
+          </div>
+          <a href="https://docs.google.com/spreadsheets/u/3/d/e/2PACX-1vRqIpd3DAqPv52Woh0tFrTDzb8-aPNOXy0-MYMKiFvg28K3qWTi5OaCYDIeVNXbQ0GGrMrMCLz5y3fC/pubhtml?widget=true&amp;headers=false"
+            class="text-lg font-medium ml-4">Browse through Data Science programs on our dataset </a>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-2xl pt-4" style="font-weight:500">Why Data Science?</h2>
+    <p>Data science has become an essential tool for various industries and applications, revolutionizing the way we
+      understand, analyze, and utilize data. </p>
+    <a href="{{ site.baseurl }}/why_data_science" class="in-paragraph-links"> Learn More > </a>
+
+    <h2 class="text-2xl pt-4">Demo Video</h2>
+    <video controls poster="{{ site.baseurl }}/assets/images/demo-video-may-2.png" class="demo-video mb-2">
+      <source src="{{ site.baseurl }}/assets/video/demo-video-may-19.mp4" type="video/mp4">
+      Your browser does not support the video.
+    </video>
+
+  </main>
+  <div class="page-header" id="pic">
+    <div class="pic">
+      <h2 class="text-xl pb-3 text-slate-600" style="font-weight:500">Tuition(USD$) per year ranking of data science
+        programs
+      </h2>
+      <img id="ranking-img" alt="tuition_ranking2"
+        src="/assets/images/tuition_ranking2.png">
+      <br>
+    </div>
+  </div>
+  </main>
+  <main id="content" class="main-content pt-16" role="main">
+    <img class="img mt-8 mb-2" id="auto-change-image" alt="images"
+      src="{{ site.baseurl }}/assets/images/slides/photo-1496096265110-f83ad7f96608.png">
+    <h2 class="text-2xl pt-2" style="font-weight:500">Who are DAFinity?</h2>
+    <p>We are four international students who are currently applying for data science programs and dedicating to help others with data.</p>
+    <img class="pb-5" src="/assets/icons/iSchoolPrimary_RGB_White.svg" style="width:200px">
+    <div class="team-members lg:pr-96">
+      <div class="lg:grid lg:grid-cols-2">
+        <p class="text-xl" style="font-weight:500">Haochen Hu</p>
+        <p class="text-xl" style="font-weight:500">Yuanjie Zhu</p>
+        <p class="text-xl" style="font-weight:500">Runhan Chen</p>
+        <p class="text-xl" style="font-weight:500">Jinrui Fang</p>
+      </div>
+    </div>
+    <a href="{{ site.baseurl }}/aboutus" class="in-paragraph-links"> Learn More > </a>
+    {{ content }}
+  </main>
+  <footer id="content" class="main-content" role="main">
+    <div class="footer pb-2">
+      <img src="{{ site.baseurl }}/assets/images/logo-transparent-darkmode.png" alt="DAfinity" class="logo">
+      <span class="site-footer-owner pt-4 pb-10"><div class="pb-2">
+        © {{ site.time | date: '%Y' }} DAfinity Data Science Programs Guide.
+      </div>
+        <div class="text-sm">
+          Image Source:
+          <a href="https://unsplash.com" style="text-decoration: underline" target="_blank">Unsplash</a>;
+          Icon Source:
+          <a href="https://undraw.co/illustrations" style="text-decoration: underline" target="_blank">UnDraw</a>;
+          CDN by
+          <a href="https://cloudflare.com" style="text-decoration: underline" target="_blank">Cloudflare</a>
+        </div>
+      </span>
+      <div class="nav-footer">
+        {% include navigation-bar.html %}
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
